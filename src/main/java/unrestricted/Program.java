@@ -18,7 +18,14 @@ public final class Program {
                                              __ ->     bell(),
                                              __ ->     output('B'),
                                              __ ->     done());
+        System.out.println("*********");
+        System.out.println("Executing program with StringBuildingInterpreter..");
+        System.out.println();
         System.out.println(interpret(program));
+        System.out.println("*********");
+        System.out.println("Executing program with EffectfulInterpreter..");
+        System.out.println();
+        EffectfulInterpreter.interpret(program);
     }
 
 
